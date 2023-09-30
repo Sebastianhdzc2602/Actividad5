@@ -1,10 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+using System.Runtime.InteropServices.WindowsRuntime;
 
 public class CoinBehavior : MonoBehaviour
 {
     [SerializeField] float speed;
+    [SerializeField] float cantidadPuntos;
+    [SerializeField] Puntaje puntaje;
    
     
 
@@ -20,7 +25,7 @@ public class CoinBehavior : MonoBehaviour
         if (collision.CompareTag("Car"))
         {
             Destroy(gameObject);
-         
+
         }
 
         if (collision.CompareTag("Trash"))

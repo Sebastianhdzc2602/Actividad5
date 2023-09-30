@@ -2,22 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 
 public class Puntaje : MonoBehaviour
 {
-    public Text puntos;
-    public int monedas;
+    private float puntos;
+    private TextMeshProUGUI textMesh;
 
+    private void Start()
+    {
+        textMesh = GetComponent<TextMeshProUGUI>();
+    }
 
     private void Update()
     {
-         puntos.text = monedas.ToString();
+        puntos += Time.deltaTime;
+        textMesh.text = puntos.ToString("0");
     }
 
-    public void Agarrar()
+    public void SumarPuntos(float puntosEntrada)
     {
-        monedas += 1;
+        puntos += puntosEntrada;
     }
 
 }

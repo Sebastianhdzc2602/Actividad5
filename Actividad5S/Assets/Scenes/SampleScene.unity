@@ -362,7 +362,7 @@ GameObject:
   - component: {fileID: 438014176}
   - component: {fileID: 438014175}
   - component: {fileID: 438014174}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -555,7 +555,8 @@ GameObject:
   - component: {fileID: 747290665}
   - component: {fileID: 747290667}
   - component: {fileID: 747290666}
-  m_Layer: 5
+  - component: {fileID: 747290668}
+  m_Layer: 2
   m_Name: Puntaje
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -678,6 +679,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 747290664}
   m_CullTransparentMesh: 1
+--- !u!114 &747290668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747290664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc4da1dde5085874ebbeaa9eda283eff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &971128426
 GameObject:
   m_ObjectHideFlags: 0
